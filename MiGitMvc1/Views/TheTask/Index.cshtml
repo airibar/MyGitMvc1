@@ -1,8 +1,35 @@
-﻿
+﻿@model MiGitMvc1.ModelView.AllTasks
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+    <h2>List of Task</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date</th>
+                <th scope="col">Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.TheListTask)
+                {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.DateCreation.ToString("MM/dd/yyyy")</td>
+                <td>@item.DueDate)</td>
+            </tr>
+                }
+            
 
-<h2>Task</h2>
+        </tbody>
+    </table>
+
+    
+
 
