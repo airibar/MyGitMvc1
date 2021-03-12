@@ -10,7 +10,8 @@ namespace MiGitMvc1.Controllers
         {
         public ActionResult Index()
             {
-            return View();
+            return Redirect("/TheTask");
+            //return View();
             }
 
         public ActionResult About()
