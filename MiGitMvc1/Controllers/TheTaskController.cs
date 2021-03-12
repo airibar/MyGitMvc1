@@ -11,6 +11,7 @@ namespace MiGitMvc1.Controllers
         // GET: Task
         public ActionResult Index()
         {
+
             return View();
         }
     }
