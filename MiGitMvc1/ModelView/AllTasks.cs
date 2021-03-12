@@ -8,8 +8,7 @@ namespace MiGitMvc1.ModelView
     {
     public class AllTasks
         {
-        OneTask oneTask = new OneTask();
-        List<OneTask> TheListTask = new List<OneTask>();
+        public List<OneTask> TheListTask = new List<OneTask>();
 
         }
     }
