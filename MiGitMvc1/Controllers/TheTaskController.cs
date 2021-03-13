@@ -20,12 +20,12 @@ namespace MiGitMvc1.Controllers
             oneTask1.Id = 1;
             oneTask1.Title = "First Task";
             oneTask1.Description = "First Task of the project";
-            oneTask1.DueDate = "01012021";
+            oneTask1.DueDate = "01/01/2021";
             listTask.TheListTask.Add(oneTask1);
             oneTask2.Id = 2;
             oneTask2.Title = "Second Task";
             oneTask2.Description = "Secondd Task of the project";
-            oneTask2.DueDate = "01012021";
+            oneTask2.DueDate = "01/01/2021";
             listTask.TheListTask.Add(oneTask2);
             return View(listTask);
         }
