@@ -13,7 +13,7 @@ namespace MiGitMvc1.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202103132053054_InitialCreate"; }
+            get { return "202103141819352_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

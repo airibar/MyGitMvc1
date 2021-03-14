@@ -20,9 +20,12 @@ namespace MiGitMvc1.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<OneTask> OneTasks { get; set; }
+
         public ApplicationDbContext()
-            : base("DBConnection", throwIfV1Schema: false)
+            : base("DBTasks", throwIfV1Schema: false)
         {
+            
         }
 
         public static ApplicationDbContext Create()
