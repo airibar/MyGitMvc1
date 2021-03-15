@@ -247,6 +247,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\TheTask\Index.cshtml" />
     <Content Include="Views\DetailTask\TaskDetail.cshtml" />
+    <Content Include="Views\DetailTask\AddTask.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

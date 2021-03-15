@@ -10,23 +10,20 @@ namespace MiGitMvc1.Controllers
 {
     public class TheTaskController : Controller
     {
+        private ApplicationDbContext _dbContext;
+        public TheTaskController()
+            {
+            _dbContext = new ApplicationDbContext();
+            }
         // GET: Task
         public ActionResult Index()
         {
             AllTasks listTask = new AllTasks();
-            // creation sample task
-            OneTask oneTask1 = new OneTask();
-            OneTask oneTask2 = new OneTask();
-            oneTask1.Id = 1;
-            oneTask1.Title = "First Task";
-            oneTask1.Description = "First Task of the project";
-            oneTask1.DueDate = "01/01/2021";
-            listTask.TheListTask.Add(oneTask1);
-            oneTask2.Id = 2;
-            oneTask2.Title = "Second Task";
-            oneTask2.Description = "Secondd Task of the project";
-            oneTask2.DueDate = "01/01/2021";
-            listTask.TheListTask.Add(oneTask2);
+            foreach (var item in _dbContext.OneTasks)
+                {
+                listTask.TheListTask.Add(item); 
+                     
+                };
             return View(listTask);
         }
     }
