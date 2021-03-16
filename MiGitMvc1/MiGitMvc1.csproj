@@ -179,6 +179,10 @@
     <Compile Include="Migrations\202103141819352_InitialCreate.Designer.cs">
       <DependentUpon>202103141819352_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103161428099_Adding_DateCreation_Field.cs" />
+    <Compile Include="Migrations\202103161428099_Adding_DateCreation_Field.Designer.cs">
+      <DependentUpon>202103161428099_Adding_DateCreation_Field.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -268,6 +272,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202103141819352_InitialCreate.resx">
       <DependentUpon>202103141819352_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103161428099_Adding_DateCreation_Field.resx">
+      <DependentUpon>202103161428099_Adding_DateCreation_Field.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
