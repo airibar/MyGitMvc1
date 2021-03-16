@@ -72,6 +72,7 @@ namespace MiGitMvc1.Controllers
             {
             using (var db =_dbContext)
                 {
+                oneTask.DateCreation = DateTime.Now;
                 var task = db.OneTasks.Add(oneTask);
                 db.GetValidationErrors();
                 db.SaveChanges();
