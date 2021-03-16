@@ -183,6 +183,10 @@
     <Compile Include="Migrations\202103161428099_Adding_DateCreation_Field.Designer.cs">
       <DependentUpon>202103161428099_Adding_DateCreation_Field.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103161607351_Adding_DateCreation_Field1.cs" />
+    <Compile Include="Migrations\202103161607351_Adding_DateCreation_Field1.Designer.cs">
+      <DependentUpon>202103161607351_Adding_DateCreation_Field1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -198,6 +202,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -245,6 +253,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="bundleconfig.json" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -318,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103161428099_Adding_DateCreation_Field.resx">
       <DependentUpon>202103161428099_Adding_DateCreation_Field.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103161607351_Adding_DateCreation_Field1.resx">
+      <DependentUpon>202103161607351_Adding_DateCreation_Field1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
