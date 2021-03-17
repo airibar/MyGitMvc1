@@ -21,8 +21,10 @@ namespace MiGitMvc1.Controllers
             AllTasks listTask = new AllTasks();
             foreach (var item in _dbContext.OneTasks)
                 {
-                listTask.TheListTask.Add(item); 
-                     
+                if (item.Status == null)
+                    {
+                    listTask.TheListTask.Add(item);
+                    }   
                 };
             return View(listTask);
         }
