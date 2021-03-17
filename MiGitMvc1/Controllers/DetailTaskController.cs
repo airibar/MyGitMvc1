@@ -72,7 +72,14 @@ namespace MiGitMvc1.Controllers
             {
             using (var db =_dbContext)
                 {
-                oneTask.DateCreation = DateTime.Now;
+                string _taskcreation = DateTime.Today.ToShortDateString();
+
+                string _taskduedate = DateTime.Today.ToShortDateString();
+                /* oneTask.DateCreation = _taskcreation;*/
+                oneTask.DateCreation = _taskcreation;
+                int max = db.OneTasks.Max(p => p.Id);
+                oneTask.Id = max + 1;
+               
                 var task = db.OneTasks.Add(oneTask);
                 db.GetValidationErrors();
                 db.SaveChanges();
@@ -88,7 +95,7 @@ namespace MiGitMvc1.Controllers
             using (var db = _dbContext)
                 {
                 OneTask task = db.OneTasks.Find(id);
-                task.DateStart = DateTime.Now;
+                task.DateStart = DateTime.Now.ToShortDateString();
                 task.Status = "s";
                 db.GetValidationErrors();
                 db.SaveChanges();
