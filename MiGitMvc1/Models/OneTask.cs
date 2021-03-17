@@ -12,9 +12,7 @@ namespace MiGitMvc1.Models
         
         {
         //
-        private DateTime _DateCreation;
-        private DateTime _DateStarted;
-        //
+               //
         public int Id { get; set; }
         [Required]
         [DisplayName("Task title")]
@@ -26,20 +24,15 @@ namespace MiGitMvc1.Models
         public string Description { get; set; }
 
         [DisplayName("Creation Date")]
-        public DateTime DateCreation {
-            get {return _DateCreation; }
-            set { _DateCreation = value; }
-            }
+        public string DateCreation { get; set; }
+            
         [Required]
         [DisplayName("Task Due Date")]
         public string DueDate { get; set; }
 
         [DisplayName("Start Date")]
-        public DateTime DateStart
-            {
-            get { return _DateStarted; }
-            set { _DateStarted = value; }
-            }
+        public string DateStart { get; set;}
+            
         [DisplayName("Task Status")]
         public string Status { get; set; }
         }
