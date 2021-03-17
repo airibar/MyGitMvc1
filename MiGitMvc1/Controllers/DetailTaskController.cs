@@ -82,5 +82,18 @@ namespace MiGitMvc1.Controllers
 
             return Redirect("/TheTask");
             }
+        [HttpGet]
+        public ActionResult TaskStart(int? id)
+            {
+            using (var db = _dbContext)
+                {
+                OneTask task = db.OneTasks.Find(id);
+                task.DateStart = DateTime.Now;
+                task.Status = "s";
+                db.GetValidationErrors();
+                db.SaveChanges();
+                }
+             return Redirect("/TheTask");
+            }
         }
 }
